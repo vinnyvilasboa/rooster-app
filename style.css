@@ -1,0 +1,132 @@
+
+#hero-bg{
+    background-image: url("assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    
+}
+
+.fade-in-text {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    color: black;
+    animation: fadeIn linear 1.5s;
+    -webkit-animation: fadeIn linear 1.5s;
+    -moz-animation: fadeIn linear 1.5s;
+    -o-animation: fadeIn linear 1.5s;
+    -ms-animation: fadeIn linear 1.5s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+/* @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ } */
+
+#about-bg {
+    background-image: url("assets/img-1.jpg");
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+#details-bg{
+    background-image: url("assets/banner-1.jpg");
+    
+}
+
+#principles-bg {
+    min-height: 600px;
+}
+
+#carousel-bg {
+    min-height: 600px;
+}
+
+#team-bg{
+    background-image: url("assets/banner-2.jpg");
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+.hero{  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    padding: auto;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    color: #fdfdfd
+}
+
+.hero .btn{
+    display: block;
+
+}
+
+.details{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    color: #030362
+}
+
+
+.icon{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #000260;
+
+}
+
+
+.logo{
+    height: 50px
+}
