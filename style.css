@@ -1,62 +1,94 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+/* imports */
 
-#hero-bg{
+/* background-img */
+#hero-bg {
     background-image: url("assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    
+
 }
 
+/* hero fade in + lettering */
 .fade-in-text {
-    
-    font-family: Arial, Helvetica, sans-serif;
+
+    /* font-family: Arial, Helvetica, sans-serif;
     font-size: 150px;
-    color: black;
+    color: black; */
     animation: fadeIn linear 1.5s;
     -webkit-animation: fadeIn linear 1.5s;
     -moz-animation: fadeIn linear 1.5s;
     -o-animation: fadeIn linear 1.5s;
     -ms-animation: fadeIn linear 1.5s;
-  }
-  
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-/* @-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
- 
- @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
- 
- .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
- } */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.welcome {
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.rooster-hero {
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+}
+
+#about-container{
+    background-color:#ccc;
+}
 
 #about-bg {
     background-image: url("assets/img-1.jpg");
@@ -64,11 +96,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    border-radius: 25px;
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+    border: 3px solid #ccc;
 }
 
-#details-bg{
+#details-bg {
     background-image: url("assets/banner-1.jpg");
-    
+
 }
 
 #principles-bg {
@@ -79,7 +116,7 @@
     min-height: 600px;
 }
 
-#team-bg{
+#team-bg {
     background-image: url("assets/banner-2.jpg");
     min-height: 600px;
     background-repeat: no-repeat;
@@ -87,25 +124,30 @@
     background-position: right;
 }
 
+/* -------------------------------------------------------- */
 
-.hero{  
+/* details */
+
+.hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: red; */
     padding: auto;
     width: 100%;
-    min-height: 700px;
+    min-height: 800px;
     display: flex;
     color: #fdfdfd
 }
 
-.hero .btn{
+.hero .btn {
     display: block;
 
 }
 
-.details{
+
+
+.details {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -117,7 +159,7 @@
 }
 
 
-.icon{
+.icon {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -127,6 +169,59 @@
 }
 
 
-.logo{
+.logo {
     height: 50px
 }
+
+
+.section-title, p {
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    height: 150px;
+    align-items: center;
+
+}
+
+
+/* media-queries */
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {
+    .container {
+        background-color: red;
+    } */
+
+    /* #hero-bg {
+        background-image: url("assets/hero.jpg");
+        height:
+    } */
+
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+    .container {
+        background-color: red;
+    }
+} */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+    .container {
+        background-color: purple;
+    }
+} */
+
+/* 
+// X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+    .container {
+        background-color: blue;
+    }
+} */
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) {
+    .container {
+        background-color: green;
+    }
+} */
