@@ -13,6 +13,26 @@
 
 }
 
+.welcome, .rooster-hero {
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    color: #fdfdfd
+}
+
+.hero .btn {
+    display: block;
+
+}
 /* hero fade in + lettering */
 .fade-in-text {
 
@@ -76,16 +96,9 @@
     }
 }
 
-.welcome {
-    font-family: 'Lora', serif;
-    font-family: 'Playfair Display', serif;
-}
 
-.rooster-hero {
-    font-family: 'Lora', serif;
-    font-family: 'Playfair Display', serif;
-}
 
+/* ----- about ----- */
 #about-container{
     background-color:#ccc;
 }
@@ -103,19 +116,24 @@
     border: 3px solid #ccc;
 }
 
+/* ----- about ----- */
+
 #details-bg {
     background-image: url("assets/banner-1.jpg");
 
 }
 
+
+
+
+/* ----- principles ----- */
 #principles-bg {
     min-height: 600px;
+    background-color:#ccc;
+
 }
 
-#carousel-bg {
-    min-height: 600px;
-}
-
+/* ----- team ----- */
 #team-bg {
     background-image: url("assets/banner-2.jpg");
     min-height: 600px;
@@ -123,27 +141,18 @@
     background-size: cover;
     background-position: right;
 }
+/* ----- carousel ----- */
+
+#carousel-bg {
+    min-height: 600px;
+}
+
 
 /* -------------------------------------------------------- */
 
 /* details */
 
-.hero {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-    padding: auto;
-    width: 100%;
-    min-height: 800px;
-    display: flex;
-    color: #fdfdfd
-}
 
-.hero .btn {
-    display: block;
-
-}
 
 
 
@@ -160,11 +169,11 @@
 
 
 .icon {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 100px;
     height: 100px;
-    margin: 10px;
-    border: 2px solid #000260;
+    margin: 20px;
+    border: 3px solid #ccc;
 
 }
 
@@ -182,6 +191,11 @@
     align-items: center;
 
 }
+
+p {
+    font-size: 20px;;
+}
+
 
 
 /* media-queries */
