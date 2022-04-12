@@ -10,13 +10,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(247, 241, 241, 0.5)
 }
 
-.welcome, .rooster-hero {
+.welcome,
+.rooster-hero {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 100px;
 }
+
+
 
 .hero {
     flex-direction: column;
@@ -29,16 +38,14 @@
     color: #fdfdfd
 }
 
+
 .hero .btn {
     display: block;
 
 }
+
 /* hero fade in + lettering */
 .fade-in-text {
-
-    /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 150px;
-    color: black; */
     animation: fadeIn linear 1.5s;
     -webkit-animation: fadeIn linear 1.5s;
     -moz-animation: fadeIn linear 1.5s;
@@ -99,13 +106,14 @@
 
 
 /* ----- about ----- */
-#about-container{
-    background-color:#ccc;
+#about-container {
+    background-color: #ccc;
 }
 
-#about-bg {
+.about-bg {
     background-image: url("assets/img-1.jpg");
-    min-height: 600px;
+    min-height: 40vh;
+    min-width: 40vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -118,8 +126,23 @@
 
 /* ----- about ----- */
 
-#details-bg {
+/* .details-bg {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 60vh;
+    position: relative;
+    color: #ccc;
+    text-shadow: 3px 3px 3px rgba(247, 241, 241, 0.5)
+
+} */
+.details-bg {
     background-image: url("assets/banner-1.jpg");
+    max-width: 100%;
+    height:auto;
+    color: #ccc;
+    text-shadow: 3px 3px 3px rgba(247, 241, 241, 0.5)
 
 }
 
@@ -129,7 +152,7 @@
 /* ----- principles ----- */
 #principles-bg {
     min-height: 600px;
-    background-color:#ccc;
+    background-color: #ccc;
 
 }
 
@@ -141,11 +164,29 @@
     background-size: cover;
     background-position: right;
 }
+
 /* ----- carousel ----- */
 
-#carousel-bg {
+/* #myCarousel {
     min-height: 600px;
-}
+} */
+/* .carousel-item {
+   min-height: 600px;
+
+} */
+
+
+/* .carousel-content{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    padding-bottom: 50px;
+
+}  */
+
+
+
 
 
 /* -------------------------------------------------------- */
@@ -164,26 +205,40 @@
     width: 100%;
     min-height: 600px;
     display: flex;
-    color: #030362
 }
+
 
 
 .icon {
-    /* border-radius: 50%; */
-    width: 100px;
-    height: 100px;
+    border-radius: 10%;
+    height: 150px;
+    width: 150px;
     margin: 20px;
-    border: 3px solid #ccc;
+    padding: 1em; 
+    border: 3px solid rgb(247, 247, 247);
+    
 
 }
 
+/* .icon {
+    border-radius: 10%;
+    height: 75px;
+    width: 75px;
+    margin: 15px;
+    padding: 1em; 
+    border: 3px solid rgb(247, 247, 247);
+    
 
-.logo {
-    height: 50px
-}
+} */
 
 
-.section-title, p {
+/* .logo {
+    min-height: 5px;
+} */
+
+
+.section-title,
+p {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
     display: flex;
@@ -193,8 +248,54 @@
 }
 
 p {
-    font-size: 20px;;
+    font-size: 20px;
+    ;
 }
+
+/* media-queries */
+
+
+@media (max-width: 768px) {
+    #hero-bg {
+        min-height: 5vh;
+        min-width: 5vw;
+    }
+
+    .rooster-hero {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    
+
+    .section-title{
+        font-size: calc(1.525rem + 3.3vw);
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .icon {
+        border-radius: 10%;
+        height: 100px;
+        width: 100px;
+        margin: 15px;
+        padding: 1em; 
+        border: 3px solid rgb(247, 247, 247);
+        
+    
+    }
+
+    /* .details-bg {
+        background-image: url("assets/banner-1.jpg");
+        padding: 0px 20px;
+    } */
+    
+
+
+}
+
+
+
 
 
 
@@ -203,9 +304,10 @@ p {
 /* @media (min-width: 576px) {
     .container {
         background-color: red;
-    } */
+    }
+} */
 
-    /* #hero-bg {
+/* #hero-bg {
         background-image: url("assets/hero.jpg");
         height:
     } */
@@ -214,7 +316,7 @@ p {
 /* // Medium devices (tablets, 768px and up) */
 /* @media (min-width: 768px) {
     .container {
-        background-color: red;
+        background-color: gray;
     }
 } */
 
