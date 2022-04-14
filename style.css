@@ -21,7 +21,9 @@ body {
 #footer {
     min-height: 5vh;
     max-height:5vh;
-    margin: 15px;
+    margin: auto;
+    margin-top: 2vh;
+   
 }
 
 .social {
@@ -88,11 +90,11 @@ body {
     font-size: 5rem;
 }
 
-.welcome {
+.sign-text {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 
@@ -218,13 +220,16 @@ body {
 
 }
 
+
+
 .section-title,
 p {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
-    display: flex;
+    display: inline-flex;
     font-size: 4.5vw;
     text-align: center;
+    margin: auto;
 }
 
 p {
@@ -248,13 +253,23 @@ p {
     font-size: 5vw;
 }
 
+
+
+.carousel-inner img {
+    margin: auto;
+  }
 /*  */
 /* media-queries */
 
 @media (min-width: 768px) {
     #myCarousel {
         max-width: 75%;
+        margin: auto;
+        margin-bottom: 3vh;
     }
+    
+
+
 }
 @media (max-width: 768px) {
 
@@ -298,6 +313,9 @@ p {
 
     .section-title {
         font-size: calc(1.525rem + 3.3vw);
+        margin: auto;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
     }
 
     p {
@@ -308,10 +326,15 @@ p {
         border-radius: 10%;
         width: 5.5em;
         height: 5.5em;
-        margin: 5px;
         padding: 1em;
-        border: 3px solid rgb(247, 247, 247);
+        border: 3px solid rgb(244, 5, 5);
+        margin: auto;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
 
+    .sign-text{
+       font-size:2em; 
     }
 
 }
