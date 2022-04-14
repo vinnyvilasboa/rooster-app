@@ -4,25 +4,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 /* imports */
 
+
+/* .outercontainer{
+    min-height: 60vh;
+} */
+.container{
+    padding: 0 1em;
+}
 /* background-img */
 #hero-bg {
     background-image: url("assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
-    min-height: 60vh;
+    background-position: center;
     position: relative;
     color: white;
     text-shadow: 3px 3px 3px rgba(247, 241, 241, 0.5)
 }
 
-.welcome,
 .rooster-hero {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 100px;
+    font-size: 5rem;
+}
+
+.welcome{
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 
@@ -32,10 +44,11 @@
     justify-content: center;
     align-items: center;
     padding: auto;
-    width: 100%;
-    min-height: 800px;
+    margin: 0 auto;
     display: flex;
-    color: #fdfdfd
+    color: #fdfdfd;
+    background-size: cover;
+
 }
 
 
@@ -112,40 +125,22 @@
 
 .about-bg {
     background-image: url("assets/img-1.jpg");
-    min-height: 40vh;
-    min-width: 40vw;
+    /* min-height: 40vh;
+    min-width: 40vw; */
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: center;
     border-radius: 25px;
-    width: 600px;
-    height: 200px;
-    margin: 20px;
+    /* width: 600px; */
+    /* height: 200px;
+    margin: 20px; */
     border: 3px solid #ccc;
 }
 
+
+
+
 /* ----- about ----- */
-
-/* .details-bg {
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    min-height: 60vh;
-    position: relative;
-    color: #ccc;
-    text-shadow: 3px 3px 3px rgba(247, 241, 241, 0.5)
-
-} */
-.details-bg {
-    background-image: url("assets/banner-1.jpg");
-    max-width: 100%;
-    height:auto;
-    color: #ccc;
-    text-shadow: 3px 3px 3px rgba(247, 241, 241, 0.5)
-
-}
-
 
 
 
@@ -167,23 +162,6 @@
 
 /* ----- carousel ----- */
 
-/* #myCarousel {
-    min-height: 600px;
-} */
-/* .carousel-item {
-   min-height: 600px;
-
-} */
-
-
-/* .carousel-content{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    right: 0;
-    padding-bottom: 50px;
-
-}  */
 
 
 
@@ -195,9 +173,7 @@
 
 
 
-
-
-.details {
+/* .details {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -205,7 +181,7 @@
     width: 100%;
     min-height: 600px;
     display: flex;
-}
+} */
 
 
 
@@ -219,23 +195,6 @@
     
 
 }
-
-/* .icon {
-    border-radius: 10%;
-    height: 75px;
-    width: 75px;
-    margin: 15px;
-    padding: 1em; 
-    border: 3px solid rgb(247, 247, 247);
-    
-
-} */
-
-
-/* .logo {
-    min-height: 5px;
-} */
-
 
 .section-title,
 p {
@@ -252,13 +211,28 @@ p {
     ;
 }
 
+.details-info{
+    background-image:url('assets/banner-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 60vh;
+    position: relative;
+    color: rgb(254, 250, 250);
+    text-shadow: 3px 3px 3px rgba(247, 241, 241, 0.5)
+
+}
 /* media-queries */
 
 
 @media (max-width: 768px) {
-    #hero-bg {
-        min-height: 5vh;
-        min-width: 5vw;
+    #hero-bg, .details-info,.about-bg, #team-bg {
+        max-width: 100%;
+        min-height: 50vh;
+        min-width: 50vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .rooster-hero {
@@ -284,15 +258,17 @@ p {
         
     
     }
-
-    /* .details-bg {
-        background-image: url("assets/banner-1.jpg");
-        padding: 0px 20px;
+    /* .details-info{
+        max-width: 100%;
+        min-height:  50vh;
+        min-width: 50vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     } */
-    
-
 
 }
+
 
 
 
@@ -340,4 +316,3 @@ p {
     .container {
         background-color: green;
     }
-} */
