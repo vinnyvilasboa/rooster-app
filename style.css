@@ -267,6 +267,19 @@ p {
         margin: auto;
         margin-bottom: 3vh;
     }
+
+    #hero-bg{
+        max-width: 100%;
+        min-height: 100vh;
+        min-width: 50vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .rooster-hero {
+        font-size: 8em;
+    }
     
 
 
