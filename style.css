@@ -39,41 +39,42 @@ body {
  .hygiene-i,
  .lab-i,
  .retention-i{
-     display: none;
+   visibility: hidden;
  }
 
  .home-expertise:hover + .expertise-i  {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
-    display: block;
+    visibility: visible;
     color: red;
-
-    
   }
  .home-hygiene:hover + .hygiene-i {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
-    display: block;
+    visibility: visible;
     color: red;
   
   }
  .home-lab:hover + .lab-i {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
-    display: block;
+    visibility: visible;
     color: red;
    
   }
  .home-retention:hover + .retention-i {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
-    display: block;
+    visibility: visible;
     color: red;
  }
 
 
 #hero-bg {
-    background-image: url("assets/hero.jpg");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),url("assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -199,7 +200,11 @@ body {
 
 /* ----- team ----- */
 #team-bg {
-    background-image: url("assets/banner-2.jpg");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url("assets/banner-2.jpg");
+
     min-height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -237,7 +242,10 @@ p {
 }
 
 .details-info {
-    background-image: url('assets/banner-1.jpg');
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url('assets/banner-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -289,7 +297,6 @@ p {
     .container,
     #hero-bg,
     .details-info,
-    .about-bg,
     #team-bg {
         max-width: 100%;
         min-height: 50vh;
@@ -301,12 +308,14 @@ p {
 
     .about-bg {
         max-width: 100%;
-        min-height: 20vh;
+        min-height: 40vh;
+        margin: auto 0 auto;
         margin-top: 20px;
         margin-bottom: 20px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        
     }
 
     .hero {
