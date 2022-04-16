@@ -8,73 +8,74 @@
 body {
     text-align: center;
     margin: 0 auto;
-    background-color:rgb(235, 232, 232)
+    background-color: rgb(235, 232, 232)
 }
 
 .container {
     min-height: 80vh;
     padding: 0 1em;
-    
+
 
 }
 
 #footer {
     min-height: 5vh;
-    max-height:5vh;
+    max-height: 5vh;
     margin: auto;
     margin-top: 2vh;
-   
+
 }
 
 .social {
     min-height: 4vh;
 }
 
-.glow-button:hover {
+/* .glow-button:hover {
     color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-}
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+} */
 
 .expertise-i,
- .hygiene-i,
- .lab-i,
- .retention-i{
-   visibility: hidden;
- }
+.hygiene-i,
+.lab-i,
+.retention-i {
+    visibility: hidden;
+}
 
- .home-expertise:hover + .expertise-i  {
+.home-expertise:hover+.expertise-i {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
     visibility: visible;
     color: red;
-  }
- .home-hygiene:hover + .hygiene-i {
+}
+
+.home-hygiene:hover+.hygiene-i {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
     visibility: visible;
     color: red;
-  
-  }
- .home-lab:hover + .lab-i {
+
+}
+
+.home-lab:hover+.lab-i {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
     visibility: visible;
     color: red;
-   
-  }
- .home-retention:hover + .retention-i {
+
+}
+
+.home-retention:hover+.retention-i {
     font-family: 'Lora', serif;
     font-family: 'Playfair Display', serif;
     visibility: visible;
     color: red;
- }
+}
 
 
 #hero-bg {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),url("assets/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url("assets/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -193,17 +194,15 @@ body {
 
 /* ----- principles ----- */
 #principles-bg {
-     min-height: 80vh;
+    min-height: 80vh;
     background-color: rgb(235, 232, 232);
 
 }
 
 /* ----- team ----- */
 #team-bg {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),url("assets/banner-2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("assets/banner-2.jpg");
 
     min-height: 80vh;
     background-repeat: no-repeat;
@@ -215,7 +214,7 @@ body {
 /* -------------------------------------------------------- */
 
 
-.icon  {
+.icon {
     border-radius: 10%;
     width: 8em;
     height: 8em;
@@ -242,10 +241,8 @@ p {
 }
 
 .details-info {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),url('assets/banner-1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('assets/banner-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -265,7 +262,8 @@ p {
 
 .carousel-inner img {
     margin: auto;
-  }
+}
+
 /*  */
 /* media-queries */
 
@@ -276,7 +274,7 @@ p {
         margin-bottom: 3vh;
     }
 
-    #hero-bg{
+    #hero-bg {
         max-width: 100%;
         min-height: 100vh;
         min-width: 50vw;
@@ -288,10 +286,11 @@ p {
     .rooster-hero {
         font-size: 8em;
     }
-    
+
 
 
 }
+
 @media (max-width: 768px) {
 
     .container,
@@ -315,7 +314,7 @@ p {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        
+
     }
 
     .hero {
@@ -326,8 +325,9 @@ p {
         margin: 0 auto;
         display: flex;
         color: #fdfdfd;
-        background-size: cover;  
+        background-size: cover;
     }
+
     .rooster-hero {
         font-size: calc(1.525rem + 3.3vw);
     }
@@ -355,8 +355,8 @@ p {
         margin-top: 3vh;
     }
 
-    .sign-text{
-       font-size:2em; 
+    .sign-text {
+        font-size: 2em;
     }
 
 }
